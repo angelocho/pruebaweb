@@ -15,24 +15,42 @@
   vars:
     ansible_user: ec2-user
   tasks:
-    - name: Install httpd
+    - name: Install pip3
       yum:
-        name: httpd
+        name: python3-pip
         state: present
         update_cache: yes
-    - name: Start httpd
+    - name: Install Docker
+      yum:
+        name: docker
+        state: present
+        update_cache: yes
+    - name: Start docker
       ansible.builtin.service:
-        name: httpd
+        name: docker
         state: started
-    - name: Enable httpd
+    - name: Enable docker
       ansible.builtin.service:
-        name: httpd
+        name: docker
         enabled: yes
-    - name: Copy file with owner and permissions
+    - name: Add the user 'ec2-user' to the group docker
+      ansible.builtin.user:
+        name: ec2-user
+        groups: docker
+        append: yes
+- hosts: all
+  gather_facts: false
+  vars:
+    ansible_user: ec2-user
+  tasks:
+    - name: Install docker compose
+      pip:
+        name: docker-compose>1.7.0
+        executable: pip3
+    - name: Copy compose.yaml to machine
       ansible.builtin.copy:
-        src: ../public_html/
-        dest: /var/www/html/
-        owner: apache
-        group: apache
-        mode: '0644'
-        directory_mode: '0755'
+        src: ../compose.yaml
+        dest: /home/ec2-user/compose.yaml
+        owner: ec2-user
+        group: ec2-user
+        mode: '0744'
