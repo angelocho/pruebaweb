@@ -1,5 +1,5 @@
 ami="ami-04b1c88a6bbd48f8e"
 instance-type="t2.micro"
-private-ip="172.31.27.79"
+private-ip="172.31.27.77"
 subnet-id="subnet-076e432dd91756679"
-instance_name = "pruebaprod"
+instance_name="pruebadevelop"

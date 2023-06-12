@@ -33,7 +33,7 @@ locals {
    }
 }
 resource "aws_instance" "pruebaweb" {
-  ami                                  = local.env[terraform.workspace]["ami"]
+  ami                                  = var.ami
   associate_public_ip_address          = true 
   availability_zone                    = "eu-west-1b"
   disable_api_stop                     = false
@@ -42,13 +42,13 @@ resource "aws_instance" "pruebaweb" {
   get_password_data                    = false
   hibernation                          = false
   instance_initiated_shutdown_behavior = "stop"
-  instance_type                        = local.env[terraform.workspace]["instance-type"]
+  instance_type                        = var.instance-type
   monitoring                           = false
   placement_partition_number           = 0
-  private_ip                           = local.env[terraform.workspace]["private-ip"]
+  private_ip                           = var.private-ip
   secondary_private_ips                = []
   source_dest_check                    = true
-  subnet_id                            = local.env[terraform.workspace]["subnet-id"]
+  subnet_id                            = var.subnet-id
   tags = {
     "Name" = var.instance_name
   }
