@@ -1,7 +1,0 @@
-version: "3"
-services:
-  web:
-    build: .
-    image: ghcr.io/angelocho/pruebaweb:latest
-    ports:
-      - "80:80"
