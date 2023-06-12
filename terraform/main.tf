@@ -7,33 +7,33 @@ data "aws_iam_session_context" "current" {
 locals {
    env = {
       default = {
-      ami="ami-04b1c88a6bbd48f8e"
-      instance-type="t2.micro"
-      private-ip="172.31.27.76"
-      subnet-id="subnet-076e432dd91756679"
+        ami="ami-04b1c88a6bbd48f8e"
+        instance-type="t2.micro"
+        private-ip="172.31.27.76"
+        subnet-id="subnet-076e432dd91756679"
        }
       develop = {
-      ami="ami-04b1c88a6bbd48f8e"
-      instance-type="t2.micro"
-      private-ip="172.31.27.77"
-      subnet-id="subnet-076e432dd91756679"
+        ami="ami-04b1c88a6bbd48f8e"
+        instance-type="t2.micro"
+        private-ip="172.31.27.77"
+        subnet-id="subnet-076e432dd91756679"
       }
       qa = {
-      ami="ami-04b1c88a6bbd48f8e"
-      instance-type="t2.micro"
-      private-ip="172.31.27.78"
-      subnet-id="subnet-076e432dd91756679"
+        ami="ami-04b1c88a6bbd48f8e"
+        instance-type="t2.micro"
+        private-ip="172.31.27.78"
+        subnet-id="subnet-076e432dd91756679"
       }
       prod = {
-      ami="ami-04b1c88a6bbd48f8e"
-      instance-type="t2.micro"
-      private-ip="172.31.27.79"
-      subnet-id="subnet-076e432dd91756679"
+        ami="ami-04b1c88a6bbd48f8e"
+        instance-type="t2.micro"
+        private-ip="172.31.27.79"
+        subnet-id="subnet-076e432dd91756679"
       }
    }
 }
 resource "aws_instance" "pruebaweb" {
-  ami                                  = terraform.workspace == "default" ? local.env.default.ami : terraform.workspace == "develop" ? local.env.develop.ami : terraform.workspace == "qa" ? local.env.qa.ami : terraform.workspace == "prod" ? local.env.prod.ami : ""
+  ami                                  = local.env[terraform.workspace][ami]
   associate_public_ip_address          = true 
   availability_zone                    = "eu-west-1b"
   disable_api_stop                     = false
@@ -42,13 +42,13 @@ resource "aws_instance" "pruebaweb" {
   get_password_data                    = false
   hibernation                          = false
   instance_initiated_shutdown_behavior = "stop"
-  instance_type                        = terraform.workspace == "default" ? local.env.default.instance-type : terraform.workspace == "develop" ? local.env.develop.instance-type : terraform.workspace == "qa" ? local.env.qa.instance-type : terraform.workspace == "prod" ? local.env.prod.instance-type : ""
+  instance_type                        = local.env[terraform.workspace][instance-type]
   monitoring                           = false
   placement_partition_number           = 0
-  private_ip                           = terraform.workspace == "default" ? local.env.default.private-ip : terraform.workspace == "develop" ? local.env.develop.private-ip : terraform.workspace == "qa" ? local.env.qa.private-ip : terraform.workspace == "prod" ? local.env.prod.private-ip : ""
+  private_ip                           = local.env[terraform.workspace][private-ip]
   secondary_private_ips                = []
   source_dest_check                    = true
-  subnet_id                            = terraform.workspace == "default" ? local.env.default.subnet-id : terraform.workspace == "develop" ? local.env.develop.subnet-id : terraform.workspace == "qa" ? local.env.qa.subnet-id : terraform.workspace == "prod" ? local.env.prod.subnet-id : ""
+  subnet_id                            = local.env[terraform.workspace][subnet-id]
   tags = {
     "Name" = var.instance_name
   }
