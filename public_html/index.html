@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Página inicial</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/styleindex.css">
+  <link rel="icon" type="image/png" href="./images/Favicon/favicon-32x32.png" sizes="32x32"/>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Content here -->
+    <div class="row">
+      <header class="col-12 fondoheader">
+      </header>
+    </div>
+    <!-- Aqui empieza el nav -->
+    <div class="row">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark col-12">
+        <a class="navbar-brand" href="#">Navegador</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./html/Bootstrap.html">Crear cuenta (pagina con Bootstrap) </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./html/Materialize.html">Escaladores (pagina con Materialize) </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./html/Descargas.html">Descarga nuestras montañas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./html/Flexbox.html">Montañas mas altas (FlexBox)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./html/Cssfloat.html">Manual de Escalada e Inscripción (Float)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./PagExternas/PaginaExterna.html"> Paginas externas</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0" action="basededatos.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Aqui acaba el nav y comienza el aside y el main -->
+    <div class="row">
+      <aside class="d-none d-sm-block col-sm-2 col-2 d-md-none publicidad">
+
+      </aside>
+      <main class="col-12 col-sm-10 col-md-12">
+
+        <div class="row justify-content-center">
+          <section class="col-12 col-sm-11 m-sm-1 mt-sm-2 caja text-center bg-transparent blockquote"><h1>Documentales y cosas de interés</h1></section>
+        </div>
+        <div class="row justify-content-center">
+          <section class="col-12 col-sm-6">
+            <div class="row justify-content-between">
+              <article class="col-12 col-md-5 m-sm-2 caja text-center">
+                <h2>Himalaya</h2>
+                <figure><a href="https://escuelatranspersonal.com/events/viaje-a-los-himalayas-y-nepal/"><img
+                      src="images/Bootstrap/himalayamain.jpg" class="img-thumbnail"></a>
+                      <figcaption class="figure-caption text-right">¿Descanso para ti o para tus hijos?, tenemos la solución</figcaption></figure>
+              </article>
+              <article class="col-12 col-md-5 m-sm-2 caja">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel"><h2>Publicidad</h2>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <figure><a href="https://www.decathlon.es/es/p/pantalon-lluvia-impermeable-montana-senderismo-forclaz-trek500-hombre-azul/_/R-p-192293"><img src="./images/Publicidad/publicidad700por700.jpg" class="d-block w-100" alt="publicidad"></a>
+                      </figure>
+                    </div>
+                    <div class="carousel-item">
+                      <figure><a
+                          href="https://www.decathlon.es/es/p/escarpines-cangrejeras-zapatillas-acuaticas-de-snorkel-subea-snk100-nino-azul/_/R-p-123028"><img
+                            src="./images/Publicidad/publicidad700x700.jpg" class="d-block w-100" alt="publicidad"></a></figure>
+                    </div>
+                    <div class="carousel-item">
+                      <figure><a href="https://www.decathlon.es/es/p/katiuskas-botas-agua-caza-solognac-inverness-100-hombre-negro-impermeable/_/R-p-5715"><img src="./images/Publicidad/Publicidad700e700.jpg" class="d-block w-100" alt="publicidad"></a></figure>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+
+              </article>
+              <article class="col-12 col-md-4 m-sm-2 caja text-center">
+                <h2>Nepal</h2>
+                <figure><a href="https://www.logitravel.com/grandes-viajes/asia/nepal/"><img
+                      src="./images/Bootstrap/viajenepal.jpg" class="img-thumbnail"></a>
+                      <figcaption class="figure-caption text-right">Viajes Baratos a Nepal</figcaption></figure>
+              </article>
+            </div>
+          </section>
+          <section class="col-12 col-sm-5  m-sm-2 caja">
+          <h2>Multimedia</h2>
+            <table class="table table-hover table-stripped tabla">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Películas
+                  </th>
+                  <th scope="col">Horario</th>
+                  <th scope="col">Productores</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><a href="https://es.wikipedia.org/wiki/Everest_(pel%C3%ADcula)">Everest</a></td>
+                  <td>12:00-13:20</td>
+                  <td>Working Title Films<br>
+                    Walden Media<br>
+                    Cross Creek Pictures</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td><a href="https://es.wikipedia.org/wiki/Touching_the_Void_(pel%C3%ADcula)">Tocando el vacío</a>
+                  </td>
+                  <td>14:00-15:06</td>
+                  <td>	FilmFour<br>
+                    UK Film Council<br>
+                    Darlow Smithson Productions...<br>
+                    
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td><a href="https://en.wikipedia.org/wiki/Meru_(film)"> Meru: odisea en el Himalaya </a></td>
+                  <td>16:00-17:27</td>
+                  <td>Coproducción EEUU-India</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </main>
+      </div>
+    
+    <div class="row">
+      <footer class="col-12 fondofooter text-center">
+        <div class="row">
+        <nav aria-label="Paginacion">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="./html/Bootstrap.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="./html/Materialize.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="./html/Descargas.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="./html/Float.html">4</a></li>
+            <li class="page-item"><a class="page-link" href="./html/Flexbox.html">5</a></li>
+            <li class="page-item"><a class="page-link" href="./html/Bootstrap.html">Siguiente</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row">
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary">Cosas de interés</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+          <a class="dropdown-item" href="http://fexme.com/inscripciones-carreras-por-montana/">Carreras por montaña</a>
+          <a class="dropdown-item" href="#">Sobre nosotros...</a>
+          <a class="dropdown-item" href="#">Donaciones</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://www.ecologistasenaccion.org/federaciones/comunidad-de-madrid/">Ecologistas en acción</a>
+        </div>
+      </div>
+    </div>
+        <div class="row">
+        <div id="facebook"><a href="http://www.facebook.com/" title="Facebook" target="_blank"></a></div>
+        <div id="google"><a href="http://www.google.com/" title="Google" target="_blank"></a></div>
+        <div id="twitter"><a href="http://www.twitter.com/" title="Twitter" target="_blank"></a></div>
+        <div id="youtube"><a href="http://www.youtube.com" title="youtube" target="_blank"></a></div>
+        <a href="mailto:montanasrocosasnepal@gmail.com?subject=Questions&body=Escribeaquísitienespreguntas">Preguntas aquí </a>
+      </div>
+
+        <div class="alert alert-info" role="alert">
+      Síguenos en Twitter @montañasrocosas y en nuestras redes sociales como Instagram o Facebook (tenemos el mismo nombre)
+    </div>
+    <small class="text-muted">Copyright © 2000-2019 MontañerosNepal - Todos los derechos reservados
+Aviso legal - Política de privacidad - Política de cookies - Política de publicidad</small>
+  </footer>
+  </div>
+
+
+
+
+
+</div>
+  <script src="./jquery/jquery-3.0.0.js"></script>
+  <script src="./pooper/popper.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>

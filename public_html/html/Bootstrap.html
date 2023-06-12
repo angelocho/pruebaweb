@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crear cuenta</title>
+  <link rel="icon" type="image/png" href="../images/Favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/stylebootstrap.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Content here -->
+    <div class="row">
+      <header class="col-12 fondoheader"></header>
+    </div>
+    <div class="row">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark col-12">
+        <a class="navbar-brand" href="#">Navegador</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Volver al indice </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/Materialize.html">Materialize</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/Descargas.html">Descargas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/Cssfloat.html">Float</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../html/Flexbox.html">Flexbox</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://es.wikipedia.org/wiki/Ueli_Steck"> Paginas externas</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0" action="basededatos.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div class="row">
+      <aside class="d-none d-md-block col-md-3">
+        <table class="table table-sm table-dark table-responsive ">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Usuarios recientes</th>
+
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry </td>
+              <td>the Bird</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Escardi</td>
+              <td>Chua</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Mohamed</td>
+              <td>Ali</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Abdul </td>
+              <td>Yasas</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Lpxzedu </td>
+              <td>Hacks</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Elvisa</td>
+              <td>Yomastercard</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Master </td>
+              <td>Card</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>TwoEz </td>
+              <td>Noscope</td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>Perry </td>
+              <td>ElOrnitorrinco</td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td>Nelly</td>
+              <td>Hillman</td>
+            </tr>
+            <tr>
+              <th scope="row">14</th>
+              <td>Mark </td>
+              <td>Evans</td>
+            </tr>
+            <tr>
+              <th scope="row">15</th>
+              <td>Axel</td>
+              <td>Blaze</td>
+            </tr>
+            <tr>
+              <th scope="row">16</th>
+              <td>Monkey </td>
+              <td>D. Luffy</td>
+            </tr>
+            <tr>
+              <th scope="row">17</th>
+              <td>Roronoa</td>
+              <td>Zoro</td>
+            </tr>
+            <tr>
+              <th scope="row">18</th>
+              <td>Sanji</td>
+              <td>ElGuay</td>
+            </tr>
+            <tr>
+              <th scope="row">19</th>
+              <td>Tony Tony</td>
+              <td>Chopper</td>
+            </tr>
+            <tr>
+              <th scope="row">20</th>
+              <td>Brook</td>
+              <td>EnLosHuesos</td>
+            </tr>
+            <tr>
+              <th scope="row">21</th>
+              <td>Donquixote</td>
+              <td>Doflamingo</td>
+            </tr>
+          </tbody>
+        </table>
+      </aside>
+      <main class="col-9 col-md-6">
+        <form class="px-4 py-3" action="basededatos.php">
+          <div class="form-group">
+            <label for="email">Dirección mail</label>
+            <input type="email" class="form-control form-control-lg" id="email" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu email</small>
+          </div>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+          </div>
+          <div class="form-row form-group">
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom01">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Juan" required>
+              <div class="valid-feedback">
+                Parece correcto!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom02">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Pérez" required>
+              <div class="valid-feedback">
+                Parece correcto!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustomUsername">Usuario</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                </div>
+                <input type="text" class="form-control" id="validationCustomUsername"
+                  aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Porfavor elige un usuario.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword6">Contraseña</label>
+            <input type="password" class="form-control mx-sm-3" aria-describedby="passwordHelpInline"
+              id="inputPassword6">
+            <small id="passwordHelpInline" class="text-muted">
+              Deben ser de al menos 8-20 caracteres de largo
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="inputAddress">Dirección (Para mandarte cartas) opcional</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">Ciudad</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Porfavor pon una ciudad.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="validationCustom04">País</label>
+            <select class="custom-select" id="validationCustom04" required>
+              <option selected disabled value="">Elige</option>
+              <option>España</option>
+              <option>Alemania</option>
+              <option>Austria</option>
+              <option>Bélgica</option>
+              <option>Italia</option>
+              <option>Bulgaria</option>
+              <option>Rumanía</option>
+              <option>Suecia</option>
+            </select>
+            <div class="invalid-feedback">
+              Seleciona un país válido
+            </div>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genero" id="masculino" value="Masculino">
+            <label class="form-check-label" for="masculino">
+              Masculino
+            </label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genero" id="femenino" value="Femenino">
+            <label class="form-check-label" for="femenino">
+              Femenino
+            </label>
+          </div>
+
+
+
+
+
+          <div class="form-group">
+            <label for="formControlRange">Rango de satisfacción al cliente, siendo izquierda lo peor y a la derecha lo
+              mejor</label>
+            <input type="range" class="form-control-range" id="formControlRange">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="Checkoferta">
+            <label class="form-check-label" for="Checkoferta">Recibir ofertas y anuncios</label>
+          </div>
+          <div class="form-group">
+            <label for="fileinput">&nbsp;y recibir tus fotos de montañas</label>
+            <input type="file" class="form-control-file" id="fileinput">
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Acepta los términos y condiciones.
+              </label>
+              <div class="invalid-feedback">
+                Acepta los términos y condiciones.
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <input class="btn btn-primary" type="reset" value="Borrar valores">
+        </form>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">¿Ya tienes cuenta?, Inicia sesión</a>
+        <a class="dropdown-item" href="#">Contraseña olvidada</a>
+
+
+
+      </main>
+      <aside class="d-none d-md-block col-md-3 publicidad">
+
+      </aside>
+    </div>
+
+    <div class="row">
+      <footer class="col-12">
+        <div class="row">
+          <nav aria-label="Paginacion">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="../index.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="./Materialize.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="./FlexBox.html">3</a></li>
+              <li class="page-item"><a class="page-link" href="./Float.html">4</a></li>
+              <li class="page-item"><a class="page-link" href="./Materialize.html">Siguiente</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="row">
+
+        </div>
+        <div class="row">
+          <div id="facebook"><a href="http://www.facebook.com/" title="Facebook" target="_blank"></a></div>
+          <div id="google"><a href="http://www.google.com/" title="Google" target="_blank"></a></div>
+          <div id="twitter"><a href="http://www.twitter.com/" title="Twitter" target="_blank"></a></div>
+          <div id="youtube"><a href="http://www.youtube.com" title="youtube" target="_blank"></a></div>
+
+        </div>
+        <div class="alert alert-info" role="alert">
+          <p> Síguenos en Twitter @montañasrocosas y en nuestras redes sociales como Instagram o Facebook (tenemos el
+            mismo nombre)</p>
+        </div>
+        <small class="text-muted">Copyright © 2000-2020 MontañerosNepal - Todos los derechos reservados
+          Aviso legal - Política de privacidad - Política de cookies - Política de publicidad</small>
+      </footer>
+    </div>
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+  <script src="../jquery/jquery-3.0.0.js"></script>
+  <script src="../pooper/popper.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
