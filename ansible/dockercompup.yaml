@@ -1,0 +1,13 @@
+---
+- hosts: all
+  vars:
+    ansible_user: ec2-user
+  tasks:
+    - name: Ejecutar docker-compose pull
+      command: docker-compose -f /home/ec2-user/compose.yaml pull
+      args:
+        chdir: /home/ec2-user
+    - name: Ejecutar docker-compose up
+      command: docker-compose -f /home/ec2-user/compose.yaml up -d
+      args:
+        chdir: /home/ec2-user
