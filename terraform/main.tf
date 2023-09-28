@@ -5,6 +5,7 @@ data "aws_iam_session_context" "current" {
   arn = data.aws_caller_identity.current.arn
 }
 locals {
+   ids = ["123456789","11111111111","2222222222"]
    env = {
       default = {
         ami="ami-04b1c88a6bbd48f8e"
